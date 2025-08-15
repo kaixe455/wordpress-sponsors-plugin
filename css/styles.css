@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.sponsor-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.white-bg {
+  background-color: #ffffff;
+  color: black;
+}
+
+.blue-bg {
+  background-color: #1aa9ff;
+  color: white;
+}
+
+.blue-bg h3,
+.blue-bg h4,
+.blue-bg p {
+  color: white;
+}
+
+.sponsor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+  gap: 30px;
+}
+
+.blue-bg .sponsor {
+  flex-direction: row-reverse;
+}
+
+.sponsor img {
+  width: 250px;
+  height: 200px;
+  object-fit: contain;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsor img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sponsor-description {
+  flex: 1;
+  text-align: left;
+}
+
+.sponsor-description h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.sponsor-description h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.sponsor-description p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #1aa9ff;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #0073aa;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.cta-button:active {
+  background-color: #005177;
+  transform: scale(1);
+}
+
+.blue-bg .cta-button {
+  background-color: #ffffff;
+  color: #1aa9ff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid #1aa9ff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+}
+
+.blue-bg .cta-button:hover {
+  background-color: #ffffff;
+  color: #1aa9ff;
+  transform: scale(1.05);
+}
+
+.blue-bg .cta-button:active {
+  background-color: #005177;
+  transform: scale(1);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sponsor {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .blue-bg .sponsor {
+    flex-direction: row-reverse;
+  }
+
+  .sponsor img {
+    width: 250px;
+    height: 200px;
+  }
+
+  .sponsor-description {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  .sponsor-description h3 {
+    font-size: 22px;
+  }
+
+  .sponsor-description h4 {
+    font-size: 18px;
+  }
+
+  .sponsor-description p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .sponsor-section {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsor {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .blue-bg .sponsor {
+    flex-direction: column;
+  }
+
+  .sponsor img {
+    max-width: 250px;
+    margin-bottom: 15px;
+  }
+
+  .sponsor-description {
+    text-align: center;
+    padding: 0 20px;
+  }
+}
